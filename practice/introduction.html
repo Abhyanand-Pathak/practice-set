@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+  }
+  .searchbar{
+   width: 650px;
+   height: 23px;
+   padding: 12px 55px ;
+   border: 1px solid  #dcdcdc;
+   border-radius: 24px;
+   outline: none;
+   font-size: 16px;
+   box-shadow: o 2px 4px rgba(0, 0, 0, 0.1);
+   transition: box-shadow 0.2s ease;  
+  }
+  .searchbar :focus{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: 15%;
+    left: 27%;
+  }
+  .logo img{
+    height: 92px;
+    width: 272px;
+  
+   }
+   .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+   .srchlogo{
+    /* margin-left: 70%; */
+    position: absolute;
+    left: 2%;
+    bottom: 49%;
+   }
+   .mic{
+    position: absolute;
+    right: 8%;
+    bottom: 48%;
+   }
+   .cmrlogo img{
+    height: 24px;
+    width: 24px;
+    position: absolute;
+     right: 2.5%;
+      bottom: 48.5%;
+   }
+   .layout{
+    /* position: absolute;
+    bottom: 0.1px; */
+     display: flex;
+     justify-content: center;
+     gap: 100px;
+     position: absolute;
+     bottom: 70px;
+     left: 441px;
+     height: 116px;
+     width: 689px;
+     /* width: 100px; */
+     /* position: absolute; */
+     
+   }
+   .png{
+    width: 15px;
+    height: 15px;
+   }
+   .png img{
+    /* height: 100px; */
+    /* height: 50px; */
+    /* position: relative; */
+    /* width: 20px; */
+    /* border-radius: 8px; */
+     /* background-color: beige; */
+     /* display: flex; */
+     /* justify-content: space-evenly;
+     align-items: center; */
+     height: 35px;
+     width: 35px;
+     background-color: #dcdcdc;
+     border-radius: 50%;
+   }
+  .para p{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    padding:10px 0px  20px;
+  }
+  
+    /* height: 4000px;
+    width: 5000px;
+    background-color: blue; */
+    
+  
+  .png a :hover {
+    background-color: #dcdcdc89;
+    height: 50px;
+    width: 50px;
+  }
+   
+</style>
+<body> 
+  <div class="body">
+  <div class="logo">
+    <img src="image.png" alt="img">
+    </div>
+  </div>
+  <div class="container">  
+   <div class="srchlogo"> <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <a href="#"><div class="mic">
+      <img src="mic.svg" alt="mic">
+    </div></a>
+   <a href="#"><div class="cmrlogo">
+      <img src="camera.svg" alt="camera">
+    </div></a> 
+    <input type="text" class="searchbar" placeholder="Search Google or type a URL">
+  </div>
+
+  <div class="layout">
+     <div class="png" >
+        <a href="https://www.youtube.com/"><img src="yt.png" alt="youtube" class="yt"></a>
+        <div class="para"><p>YouTube</p></div>
+      </div>
+      <div class="png" >
+       <a href="https://abhyanand-pathak.github.io/Amazon/"><img src="amazon.png" alt="amz" class="amz"></a>
+       <div class="para"><p>OnlineShop..</p></div>
+      </div>
+      <div class="png" >
+        <a href="https://www.google.co.in/"><img src="google.png" alt="google" class="google" ></a>
+        <div class="para"><p>Search</p></div>
+      </div>
+      <div class="png" >
+        <a href="https://www.adobe.com/in/products/photoshop-lightroom.html?sdid=S6XGMK7H&mv=search&mv2=paidsearch&ef_id=Cj0KCQjw_8rBBhCFARIsAJrc9yA4VyJiKxSPXCWV7GQo04f409OmHaSOakNiuDrwH-WOhkSnWNbIdFYaAkvKEALw_wcB:G:s&s_kwcid=AL!3085!3!700223385325!e!!g!!lightroom!221443148!17534780708&gad_source=1&gad_campaignid=221443148&gbraid=0AAAAADoVWmQX40_PjoXQWWesdC3NzjBV3&gclid=Cj0KCQjw_8rBBhCFARIsAJrc9yA4VyJiKxSPXCWV7GQo04f409OmHaSOakNiuDrwH-WOhkSnWNbIdFYaAkvKEALw_wcB"><img src="lr.png" alt="lightroom" class="lr"></a>
+       <div class="para"><p>Lightroom</p></div>
+    </div>
+    <div class="png">
+     <a href="https://www.facebook.com/"><img src="fb.png" alt="fb class=fb"></a> 
+     <div class="para"><p>facebook</p></div> 
+    </div>
+    <div class="png">
+      <a href=""><img src="shortcut.png" alt="shrtcut" class="srt"></a>
+     <div class="para"><p>AddShortcut</p></div>
+    </div>
+  </div>
+
+</body>
+</html>
